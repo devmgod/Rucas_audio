@@ -1,0 +1,39 @@
+@media screen and (max-device-width: 760px) {
+
+    .error-vertical {
+        display: none;
+    }
+}
+
+@media screen and (orientation: landscape) {
+
+    #footer {
+        display: none;
+    }
+   
+    .footer-options,
+    .footer-twitter,
+    .footer-cr,
+    #header,
+    .header-text,
+    #advise-container,
+    .container,
+    #grid {
+        background-color: none;
+        border: none;
+        display: none;
+    } 
+
+    .error-vertical {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .error-vertical p{
+        font-size: 20px;
+        font-family: Helvetica;
+        color: black;
+    }
+}

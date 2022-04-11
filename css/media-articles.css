@@ -1,0 +1,349 @@
+/* FUENTES */
+
+@font-face {
+    font-family: Arnhem;
+    src: url(Arnhem\ Bold.otf);
+}
+
+@font-face {
+    font-family: ArnhemItalic;
+    src: url(Arnhem\ BoldItalic.otf);
+}
+
+@font-face {
+    font-family: ArnhemFin;
+    src: url(Arnhem\ Blond.otf);
+}
+
+@font-face {
+    font-family: Borneo;
+    src: url(borneo-bold.otf);
+}
+
+
+/* MOBILE */
+
+@media screen and (min-device-width: 0px) and (max-device-width: 868px) {
+
+    /* HEADER */
+
+    #header {
+        background-color: whitesmoke;
+        width: 100%;
+        line-height: 45px;
+        margin: 0 auto;
+        top: 0;
+        position: fixed;
+        z-index: 100; 
+    }
+
+    .box1-2 {
+        color: white;
+        width: 100%;
+        font-family: Borneo;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .box2-3 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box1 {
+        padding: 0 20px;
+    }
+
+    .box1 img {
+        width: 30px;
+        vertical-align:middle;
+    }
+
+    .box2 {
+        padding: 0 20px;
+        width: 45px;
+        border-left: 3px solid #ececec;
+    }
+
+    .box2 {
+        vertical-align:middle;
+        line-height: 45px;
+        text-align: center;
+        display: flex;
+        color: #007898;
+        justify-content: center;
+    }
+
+    .box3 {
+        padding: 0 20px;
+        background-color: #007898;
+        color: black;
+        line-height: 45px;
+        width: 100%;
+        color: whitesmoke;
+        letter-spacing: -.3px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .header-text {
+        background-color:#007898;
+        width: 100%;
+        color: whitesmoke;
+        font-size: 10px;
+        padding: 5px 0;
+        margin-top: 45px;
+        position: fixed;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Helvetica';
+        font-weight: bold;
+        -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.15); 
+        box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.15); 
+        z-index: 100; 
+        top: 0;
+    }
+
+    .scroll-text {
+        vertical-align:middle;
+    }
+
+    .options2-container a {
+        color: #007898;
+    }
+
+    .options1-container a {
+        color: rgb(177, 177, 177);
+    }
+    
+    /* --------------- START BODY -------------- */ 
+
+    .grid {
+        width: 100%;
+        display: block;
+        opacity: 1;
+        transition: .5s cubic-bezier(.68,0,.33,.99);
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .update-container {
+        padding-left: 5%;
+        padding-top: 15px;
+        text-align: left;
+        font-family: Helvetica;
+        font-size: 9px;
+    }
+
+    .update {
+        color: rgb(165, 165, 165);
+        font-family: 'Helvetica';
+    }
+    
+    .update span {
+        color: rgb(206, 206, 206);
+    }
+
+    /* GRID 1 */
+
+    .name-article {
+        width: 90%;
+        margin: 105px auto 10px auto;
+    }
+
+    .na-new {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+        font-family: 'MarcinAntB';
+    }
+
+    .na-new p {
+        font-family: Borneo;
+        font-size: 15px;
+        color: #ff0625;
+        }
+
+    #na-newlight {
+        color:#ff0625;
+       }
+
+    #na-newlight:after {
+        content:"";
+        display:inline-block;
+        font-size:.625rem;
+        width:.25rem;
+        height:.25rem;
+        z-index:4;
+        border-radius:50%;
+        background:#ff0625;
+        animation:blink 1s infinite;
+        margin:0 0 .5rem .125rem
+    }
+
+    .name-article .na-h1 {
+        font-size: 37px;
+        font-family: Arnhem;
+        letter-spacing: -1px;
+        line-height: 95%;
+        margin-bottom: 20px;
+    }
+
+    .name-article .na-content {
+        font-size: 18px;
+        font-family: ArnhemFin;
+    }
+
+    /* CONTENT ARTICLE */
+
+    .autor {
+        width: 100%;
+        margin: 10px auto auto 0;
+    }
+
+    .autor .name-autor {
+        font-size: 25px;
+    }
+    .autor .name-autor-1 {
+        margin-top: 5px;
+        font-family: ArnhemFin;
+        font-size: 23px;
+    }
+
+    .autor span {
+        font-family: ArnhemItalic;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .content-info {
+        font-family: 'ArnhemFin';
+        font-size: 18px;
+        line-height: 1.3;
+        margin: 15px auto 20px auto;
+    }
+    
+    .content-info h2 {
+        letter-spacing: -1.5px;
+    }
+
+    .content #h2-text {
+        font-family: Arnhem;
+    }
+
+    .content #h2 {
+        font-family: ArnhemItalic;
+    }
+
+    #content-text {
+        font-family: ArnhemFin;
+    }
+    
+    .tab {
+        margin:20px 0 20px 40px;
+        text-align: left;
+    }
+
+    .tab p span {
+        font-weight: bold;
+    }
+
+    .quote {
+        margin: 10px 0 20px 0;
+        align-items: right;
+        text-align: end;
+        font-size: 16px
+    }
+
+    .quote-autor {
+        color: #037185;
+        font-family: Arnhem;
+    }
+
+    .h2-subtitle {
+        font-size: 25px;
+        margin: 30px 0 5px 0;
+        line-height: 1.1;
+        font-family: ArnhemItalic;
+    }
+
+    .number {
+        padding: 10px 0 10px 40px;
+    }
+
+    .conclusion {
+        margin-top: 10px;
+        color: #007898;
+    }
+
+    hr {
+        width: 100%;
+        margin: 20px 0;
+        color: rgb(212, 212, 212);
+    }
+
+    /* FOOTER */
+
+    #footer {
+        width: 100%;
+        margin: 0 auto;
+        background-color: white;
+        height: auto;
+        padding: 15px 0 20px 0;
+        -webkit-box-shadow: 0px -4px 12px 4px rgba(0, 0, 0, 0.109); 
+        box-shadow: 0px -4px 12px 4px rgba(0, 0, 0, 0.109); 
+        display: flex;
+        border-top: 10px #034457 solid;
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-a > a,
+    .footer-twitter,
+    .footer-cr {
+        font-family: Borneo;
+        font-size: 12px;
+        text-decoration: none;
+        color: rgb(153, 153, 153);
+    }
+
+    .footer-a,
+    .footer-twitter {
+        border-bottom: 1px solid rgb(238, 238, 238);
+    }
+
+    .footer-a > a {
+        padding: 10px 0;
+        text-transform: uppercase;
+    }
+
+    .footer-a {
+        padding-bottom: 10px;
+    }
+
+    .footer-twitter {
+        padding: 20px 0 17px 0;
+        text-transform: uppercase;
+    }
+
+    .footer-cr {
+        border: none;
+        padding: 20px 0 0 0;
+    }
+
+
+    /* ---------------- END BODY -------------- */ 
+
+}

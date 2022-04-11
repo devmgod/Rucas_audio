@@ -1,0 +1,10 @@
+
+
+rewritebase /
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://parenlo.es/ [R,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html

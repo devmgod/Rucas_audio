@@ -1,0 +1,28 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.mantenimiento {
+    text-align: center;
+    width: 90%;
+    color: #202020;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mantenimiento .m-title {
+    font-family:"noto sans", sans-serif;
+    margin: 0px 0;
+}
+
+.mantenimiento .m-subtitle, 
+.mantenimiento a {
+    color: #202020;
+    font-family:"noto sans", sans-serif;
+    margin: 10px 0;
+}
+
+.gif {
+    width: 50%;
+}

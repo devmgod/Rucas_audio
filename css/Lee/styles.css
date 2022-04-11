@@ -1,0 +1,171 @@
+:root {
+    --white: #fff;
+    /* --active-color: #00aeb0; */
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    background: var(--active-color);
+    /* transition: background 0.4s ease; */
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="range"] {
+    height: 5px;
+    -webkit-appearance: none;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #3b7677;
+    /* transition: background 0.2s ease; */
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  .audio-player {
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 35px;
+    box-shadow: 0 28px 28px rgb(0 0 0 / 20%);
+    margin: auto;
+    color: var(--white);
+    background: #494444;
+  }
+  
+  .artwork {
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    height: 287px;
+    width: 100%;
+    margin-bottom: 20px;
+ }
+  
+  .track-info {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .title {
+    font-weight: 200;
+    margin-bottom: 4px;
+    text-align: left;
+    
+  }
+  
+  .artist {
+    font-weight: 500;
+    margin-top: 0;
+  }
+  
+  .audio-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto 15px;
+  }
+  
+  .audio-controls .prev svg,
+  .audio-controls .next svg {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .audio-controls .play svg,
+  .audio-controls .pause svg {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .audio-controls path {
+    fill: var(--white);
+  }
+  
+  .color-backdrop {
+    background: linear-gradient(45deg, var(--active-color) 20%, transparent 100%)
+      no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .color-backdrop.playing {
+    animation: colorChange 20s alternate infinite;
+  }
+  
+  @keyframes colorChange {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    /* .next{
+      display: none;
+    }
+    .prev {
+      display: none;
+    } */
+    .audio-controls {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+.logo-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.logo-title > img {
+    width: 45px;
+}
+.prev-btn {
+  transform: rotate(180deg);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.MuiSvgIcon-root {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.css-1qx01vb-MuiStack-root {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.MuiBox-root {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,132 @@
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 68px;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.2s;
+    z-index: 1000;
+    text-align: center;
+    -webkit-transition: .5s cubic-bezier(.68,0,.33,.99);
+    border-bottom: 10px #034457 solid;
+}
+  
+.overlay-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+  
+.overlay a {
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    transition: 0.3s;
+}
+
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.options {
+    text-align: left;
+    width: 100%;
+    margin: 10px auto 0px auto;
+    font-size: 14px;
+}
+
+.options a {
+    line-height: 25px;
+}
+
+.options > a {
+    margin-bottom: 10px;
+}
+
+.options1-container,
+.options2-container,
+.options3-container,
+.options4-container,
+.options5-container {
+    width: 100%;
+    height: 45px;
+    color: whitesmoke;
+}
+.options1-container {
+    color: #007898;
+}
+
+.options1-container,
+.options2-container,
+.options3-container,
+.options4-container,
+.options5-container {
+    padding-left: 25px;
+    display: grid;
+    align-items: center;
+    vertical-align: middle;
+    grid-template-columns: repeat(2, 1% 99%);
+    line-height: 50px;
+}
+
+
+.options2-container a,
+.options3-container a,
+.options4-container a,
+.options5-container a {
+    color: rgb(177, 177, 177);
+}
+
+.options1-container a {
+    color: #007898;
+}
+
+.options1-container img,
+.options2-container img,
+.options3-container img,
+.options4-container img,
+.options5-container img {
+    width: 15px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+    padding-right: 50px;
+}
+
+.options4-container img {
+    width: 15px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+    padding-right: 50px;
+}
+
+.options4-container {
+    width: 100%;
+    border-radius: 0px 10px 10px 0;
+    color: whitesmoke;
+}
+
+.options-1 {
+    width: 90%;
+    margin: 0px auto 0px 20px;
+}
+
+.options-2,
+.options-3,
+.options-4 {
+    width: 90%;
+    margin: 0px auto 0px 20px;
+}
+
+.options2-container {
+    flex-direction: row;
+}
+

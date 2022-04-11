@@ -1,0 +1,5 @@
+.podcast-content {
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
