@@ -7,12 +7,15 @@ var svg_play = document.getElementById("play");
 var svg_pause = document.getElementById("pause");
 var next_btn = document.getElementsByClassName("next");
 var progress_vol = document.getElementsByClassName("progress_vol");
+var progressTime = document.getElementById("progressTime");
+var endTime = document.getElementById("endTime");
 
 var audio = new Audio("../audio/audio1.mp3");
 
 var trackTime = 0;
 
 setInterval(() => {
+  timeEnd();
   trackTime = audio.currentTime;
   if (trackTime >= audio.duration) {
     trackTime = 0;
@@ -20,10 +23,42 @@ setInterval(() => {
     svg_pause.style.display = "none";
   }
   progress[0].value = trackTime / audio.duration;
+  progress_Time();
 }, 1);
 
 const set_time = (val) => {
   audio.currentTime = val * audio.duration;
+};
+
+var timeEnd = () => {
+  if (!isNaN(audio.duration)) {
+    var ml = parseInt(audio.duration / 60);
+
+    // Here's the incorrect seconds countdown calc
+    var sl = parseInt(audio.duration % 60);
+
+    if (sl < 10) {
+      endTime.innerHTML = ml + ":0" + sl;
+    } else {
+      endTime.innerHTML = "" + ml + ":" + sl;
+    }
+  }
+};
+
+const progress_Time = () => {
+  var temp = audio.currentTime;
+  if (temp >= audio.duration) {
+    temp = 0;
+  }
+
+  var ml = parseInt(temp / 60);
+  // Here's the incorrect seconds countdown calc
+  var sl = parseInt(temp % 60);
+  if (sl < 10) {
+    progressTime.innerHTML = ml + ":0" + sl;
+  } else {
+    progressTime.innerHTML = "" + ml + ":" + sl;
+  }
 };
 
 const play_pause = () => {

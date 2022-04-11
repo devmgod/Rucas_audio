@@ -23,13 +23,10 @@
   input[type="range"] {
     height: 5px;
     -webkit-appearance: none;
-    width: 100%;
-    margin-bottom: 10px;
+    width: 70%;
     border-radius: 8px;
     background: #3b7677;
-    /* transition: background 0.2s ease; */
     cursor: pointer;
-    margin-bottom: 30px;
   }
   
   .audio-player {
@@ -62,6 +59,14 @@
     margin-bottom: 4px;
     text-align: left;
     
+  }
+  
+
+  .progress_state {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
   }
   
   .artist {

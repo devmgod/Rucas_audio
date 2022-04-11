@@ -168,17 +168,22 @@
                         <img src='../img/logo192.png' class="App-logo" alt="logo" />
     
                     </div>
-                    <input 
-                        type="range"
-                        value='0'
-                        step="0.00001"
-                        min="0"
-                        max="1"
-                        class="progress"
-                        oninput="set_time(this.value)"
-                        onMouseUp='onScrubEnd'
-                        onKeyUp='onScrubEnd'
-                    />
+                    <div class="progress_state">
+                        <span id="progressTime">00:00</span>
+                        <input 
+                            type="range"
+                            value='0'
+                            step="0.00001"
+                            min="0"
+                            max="1"
+                            class="progress"
+                            oninput="set_time(this.value)"
+                            onMouseUp='onScrubEnd'
+                            onKeyUp='onScrubEnd'
+                        />
+                        <span id="endTime">00:00</span>
+                    </div>
+                    
                    <div class="audio-controls">
                        <button type="button" id="prev" onclick="b_forward(-10)" aria-label="Previous">
                            <img src="../img/prev.png" alt="prev">
